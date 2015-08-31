@@ -12,7 +12,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{C95AB203-18B
 		lib\libmysqld_x86.dll = lib\libmysqld_x86.dll
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "com.mkysoft.emysqltest", "..\com.mkysoft.emysqltest\com.mkysoft.emysqltest.csproj", "{21A9E433-0198-4DD8-8946-87620ACB240F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "com.mkysoft.emysqltest", "com.mkysoft.emysqltest\com.mkysoft.emysqltest.csproj", "{21A9E433-0198-4DD8-8946-87620ACB240F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{690052B4-5633-4BC6-B1C8-4239707A6902}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
