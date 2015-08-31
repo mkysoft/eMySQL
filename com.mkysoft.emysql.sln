@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "com.mkysoft.emysql", "com.mkysoft.emysql\com.mkysoft.emysql.csproj", "{2426B54F-6CB8-4286-9838-A255306B804A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{C95AB203-18B2-4C6A-BF19-DC470A780878}"
+	ProjectSection(SolutionItems) = preProject
+		lib\errmsg.sys = lib\errmsg.sys
+		lib\libmysqld_x64.dll = lib\libmysqld_x64.dll
+		lib\libmysqld_x86.dll = lib\libmysqld_x86.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "com.mkysoft.emysqltest", "..\com.mkysoft.emysqltest\com.mkysoft.emysqltest.csproj", "{21A9E433-0198-4DD8-8946-87620ACB240F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2426B54F-6CB8-4286-9838-A255306B804A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2426B54F-6CB8-4286-9838-A255306B804A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2426B54F-6CB8-4286-9838-A255306B804A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2426B54F-6CB8-4286-9838-A255306B804A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21A9E433-0198-4DD8-8946-87620ACB240F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21A9E433-0198-4DD8-8946-87620ACB240F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21A9E433-0198-4DD8-8946-87620ACB240F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21A9E433-0198-4DD8-8946-87620ACB240F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
