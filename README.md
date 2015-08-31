@@ -1,2 +1,2 @@
 # eMySQL
-.Net Wrapper for embeded MySQL
+.Net interface for embeded MySQL using mysqld.dll file.
