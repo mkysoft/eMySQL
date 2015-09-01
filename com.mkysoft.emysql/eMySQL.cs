@@ -73,13 +73,13 @@ namespace com.mkysoft.emysql
         static extern IntPtr mysql_fetch_row(IntPtr result);
 
         [DllImport("libmysqld_x64.dll")]
+        static extern IntPtr mysql_fetch_field(IntPtr result);
+
+        [DllImport("libmysqld_x64.dll")]
         static extern IntPtr mysql_fetch_fields(IntPtr result);
 
         [DllImport("libmysqld_x64.dll")]
         static extern uint mysql_field_count(IntPtr mysql);
-
-        //[DllImport("libmysqld_x64.dll", CharSet = CharSet.Ansi)]
-        //static extern string mysql_error(IntPtr mysql);
 
         [DllImport("libmysqld_x64.dll")]
         static extern IntPtr mysql_error(IntPtr mysql);
@@ -236,9 +236,13 @@ namespace com.mkysoft.emysql
 
             //IntPtr fields = mysql_fetch_fields(result);
 
+            //var field = mysql_fetch_field(result);
+            //var obj = (MySQLH.MYSQL_FIELD)Marshal.PtrToStructure(field, typeof(MySQLH.MYSQL_FIELD));
+            //Debug.WriteLine(obj.GetType());
+
             //var Fields = (IntPtr[])MarshalArray(typeof(IntPtr), fields, (int)fieldCount);
 
-            // var obj = (MySQLH.MYSQL_FIELD)Marshal.PtrToStructure(Fields[0], typeof(MySQLH.MYSQL_FIELD));
+            //var obj = (MySQLH.MYSQL_FIELD)Marshal.PtrToStructure(fields, typeof(MySQLH.MYSQL_FIELD));
 
             for (IntPtr ptrRow = mysql_fetch_row(result); ptrRow != IntPtr.Zero; ptrRow = mysql_fetch_row(result))
             {
