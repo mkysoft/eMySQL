@@ -16,6 +16,7 @@ namespace com.mkysoft.emysqltest
                 var mysql = new eMySQL();
 
                 string query = "CREATE DATABASE test;";
+                
                 mysql.ExecuteNoneQuery(query);
             }
             catch (Exception ex)
@@ -32,6 +33,7 @@ namespace com.mkysoft.emysqltest
                 var mysql = new eMySQL("test");
 
                 string query = "CREATE TABLE test (c CHAR(20) CHARACTER SET utf8 COLLATE utf8_bin);";
+                //excute
                 mysql.ExecuteNoneQuery(query);
             }
             catch (Exception ex)
